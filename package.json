@@ -1,0 +1,50 @@
+{
+  "name": "@aahdrien/needle",
+  "version": "0.0.1",
+  "main": "dist/aahdrien-needle.cjs.js",
+  "module": "dist/aahdrien-needle.esm.js",
+  "browser": "dist/aahdrien-needle.umd.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aahdrien/needle.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.1.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-flowtype": "^2.49.3",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "prettier-eslint": "^8.8.2",
+    "rollup": "^0.60.0",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  },
+  "scripts": {
+    "lint": "eslint \"src/**/*.js\"",
+    "format": "prettier-eslint \"src/**/*.js\"",
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "node test/test.js",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "npm run format",
+      "git add"
+    ]
+  },
+  "license": "MIT"
+}
