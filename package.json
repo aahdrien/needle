@@ -1,6 +1,6 @@
 {
   "name": "@aahdrien/needle",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/aahdrien-needle.cjs.js",
   "module": "dist/aahdrien-needle.esm.js",
   "browser": "dist/aahdrien-needle.umd.js",
