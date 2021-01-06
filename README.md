@@ -1,5 +1,7 @@
 # @aahdrien/needle
 
+This package is based on [@bigyouth/base](https://www.npmjs.com/package/@bigyouth/base)
+
 ## Getting started
 
 ```bash
