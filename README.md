@@ -178,10 +178,10 @@ Returns an event binder. Once called with the DOM element which should have the 
 import { on } from '@aahdrien/needle'
 
 // the last argument isn't needed
-const enventBinder = on('mousenter', () => {
+const eventBinder = on('mousenter', () => {
   title.textContent = 'Not that close!'
 }, { once: true })
-const unbind = enventBinder(foo)
+const unbind = eventBinder(foo)
 // remove event
 unbind()
 
